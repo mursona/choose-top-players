@@ -1,13 +1,3 @@
-// h1 header text color
-const heading = document.getElementById('header-heading');
-heading.style.color="#E3E525";
-heading.style.fontFamily= 'Berkshire Swash', "cursive";
-
-// h1 header text color
-const paragraph = document.getElementById('header-prgh');
-paragraph.style.fontFamily = 'Manrope', "sans-serif";
-
-
 // per player budget expense calculation start
 
 function getPlayerExpense(){
@@ -78,6 +68,50 @@ document.getElementById('calculate-total').addEventListener('click', function(){
     // function calling 
     getTotalExpenses();
 })
+
+
+// select top five players
+const select = [];
+// players-select
+
+function displayPlayer()
+{
+    const totalplayers = document.getElementById("total-players");
+    // totalplayers.innerText = 'Selected - V' + select.length;
+
+    const selectContainer = document.getElementById("players-select");
+    selectContainer.textContent = '';
+
+    for(let i = 0; i < select.length; i++){
+
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+            <th>${i+1}</th>
+            <td>${select[i].playerName}</td>
+            `;
+            selectContainer.appendChild(tr);
+    }
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+    <th></th>
+ `;
+    selectContainer.appendChild(tr);
+}
+
+
+function addToselect(element) {
+    const playerName = element.parentNode.parentNode.children[0].innerText
+    const player = {
+        playerName: playerName,
+    }
+    if ((select.length) === 5) {
+        alert("Only Select Top Five Player");
+    }
+    else{
+        select.push(player);
+    }
+    displayPlayer();
+}
 
 
 
