@@ -83,7 +83,6 @@ function displayPlayer()
     selectContainer.textContent = '';
 
     for(let i = 0; i < select.length; i++){
-
             const tr = document.createElement("tr");
             tr.innerHTML = `
             <th>${i+1}</th>

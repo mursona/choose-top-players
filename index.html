@@ -14,7 +14,7 @@
     <!-- header section start -->
     <header class="bg-black pb-28">
         <section>
-            <h1 id="header-heading" class="text-white font-bold text-5xl text-center pt-28">Select Your Best Five</h1>
+            <h1 id="header-heading" class="text-white font-bold text-5xl text-center pt-28">Choose Best Five players</h1>
             <span class="absolute top-11.5 left-2/4 pl-28"><img src="images/underline-02.png" alt=""></span>
             <p id="header-prgh" class="text-white text-center text-xl font-light pt-8 pb-8">Live Your Best Day Ever Success is something everyone wants, yet it often feels elusive.<br><span>How do you get it? And once you get it, how do you stay at the top?</span><br><span>Explore the top men's Test players in the MRF Tyres ICC rankings</span></p>
             <span class="absolute right-3/4 top-12 pr-28 pt-10"><img src="images/headerPlayer.png" alt=""></span>
@@ -27,221 +27,213 @@
     <main>
         <section class="py-16 bg-stone-900 px-16">
             <!-- card section start -->
-            
-            <div class="grid grid-rows-4 grid-cols-4 grid-flow-col gap-4 text-center justify-center">
-                <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md w-4/5">
+            <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 text-center justify-center">
+            <!-- player one -->
+            <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md">
+                <img class="rounded-t-lg" src="images/footballer-profile/cristiano ronaldo.png" alt="">
+                <div class="px-5 pt-5">
                     <a href="#">
-                        <img class="rounded-t-lg" src="images/footballer-profile/cristiano ronaldo.png" alt="">
-                    </a>
-                    <div class="px-5 pt-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Cristiano Ronaldo</h2>
-                            </a>
-                            <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
-                            <div class="card-actions justify-end">
-                                <button id="button-disabled1" class="items-center mt-5 mb-5 py-2 px-12 text-sm font-medium text-center text-white bg-blue-900 rounded hover:bg-blue-400" onclick="addToselect(this)">SELECT</button>
-                            </div>
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Cristiano Ronaldo</h2>
+                        </a>
+                        <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
+                        <div class="card-actions justify-end">
+                            <button id="button-disabled1" class="items-center mt-5 mb-5 py-2 px-12 text-sm font-medium text-center text-white bg-blue-900 rounded hover:bg-blue-400" onclick="addToselect(this)">SELECT</button>
+                        </div>
+                    </div>
+            </div>
+            <!-- player one end -->
+
+            <!-- player 2 start -->
+            <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md">
+                <img class="rounded-t-lg" src="images/footballer-profile/lionel messi.png" alt="">
+                <div class="px-5 pt-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Lionel Messi</h2>
+                        </a>
+                        <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
+                        <div class="card-actions justify-end">
+                            <button id="button-disabled2" class="items-center mt-5 mb-5 py-2 px-12 text-sm font-medium text-center text-white bg-blue-900 rounded hover:bg-blue-400" onclick="addToselect(this)">SELECT</button>
+                        </div>
+                    </div>
+            </div>
+            <!-- player 2 end -->
+
+            <!-- player 3 start -->
+            <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md">
+
+                <img class="rounded-t-lg" src="images/footballer-profile/alex sanches.png" alt="">
+                <div class="px-5 pt-5">
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Alex Sanches</h2>
+                <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
+                   <div class="card-actions justify-end">
+                   <button id="button-disabled3" class="items-center mt-5 mb-5 py-2 px-12 text-sm font-medium text-center text-white bg-blue-900 rounded hover:bg-blue-400" onclick="addToselect(this)">SELECT</button>
+                   </div>
+                </div>
+            </div>
+            <!-- player 3 end -->
+
+            <!-- selected top five player section start -->
+            <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md">
+                <div class="px-5 pt-5">
+                        <h5 id="total-players" class="mb-2 text-2xl font-bold tracking-tight text-white">Selected - V</h5>
+                        <span class="absolute right-10 pr-16"><img src="images/underline-01.png" alt=""></span><br>
+                        <a href="#" class="items-center py-2 px-16 text-xl font-light text-left text-gray-400">
+                             <div class="overflow-x-auto">
+                             <table class="table table-black w-full">
+                             <!-- head -->
+                                    <thead>
+                                    <tr>
+                                    <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="players-select">
+                                    </tbody>
+                             </table>
+                             </div>
+                        </a>
+                </div>
+            </div>
+            <!-- selected top five player section end -->
+
+            <!-- player 4 start -->
+            <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md">
+                <img class="rounded-t-lg" src="images/footballer-profile/callum hudson.png" alt="">
+                <div class="px-5 pt-5">
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Callum Hudson</h2>
+                <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
+                        <div class="card-actions justify-end">
+                            <button id="button-disabled4" class="items-center mt-5 mb-5 py-2 px-12 text-sm font-medium text-center text-white bg-blue-900 rounded hover:bg-blue-400" onclick="addToselect(this)">SELECT</button>
                         </div>
                 </div>
-                <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md w-4/5">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="images/footballer-profile/lionel messi.png" alt="">
-                    </a>
+            </div>
+            <!-- player 4 end -->
+
+            <!-- player 5 start -->
+            <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md">
+                <img class="rounded-t-lg" src="images/footballer-profile/gareth bale.png" alt="">
                     <div class="px-5 pt-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Lionel Messi</h2>
-                            </a>
-                            <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
-                            <div class="card-actions justify-end">
-                                <button id="button-disabled2" class="items-center mt-5 mb-5 py-2 px-12 text-sm font-medium text-center text-white bg-blue-900 rounded hover:bg-blue-400" onclick="addToselect(this)">SELECT</button>
-                            </div>
-                        </div>
-                </div>
-                <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md w-4/5">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="images/footballer-profile/alex sanches.png" alt="">
-                    </a>
-                    <div class="px-5 pt-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Alex Sanches</h2>
-                            </a>
-                            <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
-                            <div class="card-actions justify-end">
-                                <button id="button-disabled3" class="items-center mt-5 mb-5 py-2 px-12 text-sm font-medium text-center text-white bg-blue-900 rounded hover:bg-blue-400" onclick="addToselect(this)">SELECT</button>
-                            </div>
-                        </div>
-                </div>
-                <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md w-4/5">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="images/footballer-profile/callum hudson.png" alt="">
-                    </a>
-                    <div class="px-5 pt-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Callum Hudson</h2>
-                            </a>
-                            <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
-                            <div class="card-actions justify-end">
-                                <button id="button-disabled4" class="items-center mt-5 mb-5 py-2 px-12 text-sm font-medium text-center text-white bg-blue-900 rounded hover:bg-blue-400" onclick="addToselect(this)">SELECT</button>
-                            </div>
-                        </div>
-                </div>
-                <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md w-4/5">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="images/footballer-profile/gareth bale.png" alt="">
-                    </a>
-                    <div class="px-5 pt-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Gareth Bale</h2>
-                            </a>
-                            <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Gareth Bale</h2>
+                    <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
                             <div class="card-actions justify-end">
                                 <button id="button-disabled5" class="items-center mt-5 mb-5 py-2 px-12 text-sm font-medium text-center text-white bg-blue-900 rounded hover:bg-blue-400" onclick="addToselect(this)">SELECT</button>
                             </div>
-                        </div>
+                    </div>
                 </div>
-                <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md w-4/5">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="images/footballer-profile/jannis nikolaou.png" alt="">
-                    </a>
+            <!-- player 5 end -->
+
+            <!-- player 6 start -->
+            <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md">
+                <img class="rounded-t-lg" src="images/footballer-profile/jannis nikolaou.png" alt="">
                     <div class="px-5 pt-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Jannis Nikalaou</h2>
-                            </a>
-                            <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Jannis Nikalaou</h2>
+                     <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
                             <div class="card-actions justify-end">
                                 <button  id="button-disabled6" class="items-center mt-5 mb-5 py-2 px-12 text-sm font-medium text-center text-white bg-blue-900 rounded hover:bg-blue-400" onclick="addToselect(this)">SELECT</button>
                             </div>
-                        </div>
+                    </div>
                 </div>
-                <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md w-4/5">
+            <!-- player 6 end -->
+
+            <!-- Budget Calculation section start -->
+            <div class="row-span-2 max-w-sm bg-black rounded border border-gray-700 shadow-md mb-96">
+                <div class="px-5 pt-5">
                     <a href="#">
-                        <img class="rounded-t-lg" src="images/footballer-profile/Mesut-Ozil.png" alt="">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Budget</h5>
                     </a>
+                    <span class="absolute right-10 pr-16"><img src="images/underline-01.png" alt=""></span><br><br>
+                    <div class="text-gray-300 text-end">Per Player: <input class="bg-black border border-slate-400 text-xs py-2 px-2" type="text" name="" id="player-budget"></div>
+                    <button id="playerCalculate-btn" class="items-center mt-5 py-2 px-16 text-sm font-medium text-center text-white bg-blue-900 rounded hover:bg-blue-400">Calculate</button>
+                    <p class="mt-5 text-yellow-300"><span>Player Expenses : $</span><span id="player-expenses"> </span></p>
+                    <div>
+                        <div class="py-3 text-gray-300 text-end">Manager: <input class="bg-black border border-slate-400 text-xs py-2 px-2" type="text" name="" id="manager-expense">
+                        </div>
+                        <div class="py-3 text-gray-300 text-end">Coach: <input class="bg-black border border-slate-400 text-xs py-2 px-2" type="text" name="" id="coach-expense">
+                        </div>
+                        <button id="calculate-total" class="items-center mt-5 py-2 px-12 text-sm font-medium text-center text-white bg-blue-900 rounded hover:bg-blue-400">Calculate Total</button><br>
+                        <p class="mt-8 text-yellow-300"><span>Total : $</span><span id="total-expenses"> </span></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Budget Calculation section end -->
+
+            <!-- player 7 start -->
+            <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md">
+                <img class="rounded-t-lg" src="images/footballer-profile/Mesut-Ozil.png" alt="">
                     <div class="px-5 pt-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Mesut Ozil</h2>
-                            </a>
-                            <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Mesut Ozil</h2>
+                    <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
                             <div class="card-actions justify-end">
                                 <button  id="button-disabled7" class="items-center mt-5 mb-5 py-2 px-12 text-sm font-medium text-center text-white bg-blue-900 rounded hover:bg-blue-400" onclick="addToselect(this)">SELECT</button>
                             </div>
                         </div>
                 </div>
-                <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md w-4/5">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="images/footballer-profile/joga palhinha fulham.png" alt="">
-                    </a>
+            <!-- player 7 end -->
+
+            <!-- player 8 start -->
+            <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md">
+                <img class="rounded-t-lg" src="images/footballer-profile/joga palhinha fulham.png" alt="">
                     <div class="px-5 pt-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Joga Palhinha</h2>
-                            </a>
-                            <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Joga Palhinha</h2>
+                    <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
                             <div class="card-actions justify-end">
                                 <button id="button-disabled8" class="items-center mt-5 mb-5 py-2 px-12 text-sm font-medium text-center text-white bg-blue-900 rounded hover:bg-blue-400" onclick="addToselect(this)">SELECT</button>
                             </div>
-                        </div>
-                </div>
-                <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md w-4/5">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="images/footballer-profile/Ousmane-Dembele.png" alt="">
-                    </a>
+                    </div>
+            </div>
+            <!-- player 8 end -->
+
+            <!-- player 9 start -->
+            <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md">
+                <img class="rounded-t-lg" src="images/footballer-profile/Ousmane-Dembele.png" alt="">
+                   <div class="px-5 pt-5">
+                   <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Ousmane</h2>
+                   <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
+                           <div class="card-actions justify-end">
+                               <button id="button-disabled9" class="items-center mt-5 mb-5 py-2 px-12 text-sm font-medium text-center text-white bg-blue-900 rounded hover:bg-blue-400" onclick="addToselect(this)">SELECT</button>
+                           </div>
+                   </div>
+            </div>
+            <!-- player 9 end -->
+
+            <!-- player 10 start -->
+            <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md">
+                <img class="rounded-t-lg" src="images/footballer-profile/p.Ekwah.png" alt="">
                     <div class="px-5 pt-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Ousmane</h2>
-                            </a>
-                            <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
-                            <div class="card-actions justify-end">
-                                <button id="button-disabled9" class="items-center mt-5 mb-5 py-2 px-12 text-sm font-medium text-center text-white bg-blue-900 rounded hover:bg-blue-400" onclick="addToselect(this)">SELECT</button>
-                            </div>
-                        </div>
-                </div>
-                <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md w-4/5">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="images/footballer-profile/p.Ekwah.png" alt="">
-                    </a>
-                    <div class="px-5 pt-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">P. Ekwah</h2>
-                            </a>
-                            <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">P. Ekwah</h2>
+                        <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
                             <div class="card-actions justify-end">
                                 <button id="button-disabled10" class="items-center mt-5 mb-5 py-2 px-12 text-sm font-medium text-center text-white bg-blue-900 rounded hover:bg-blue-400" onclick="addToselect(this)">SELECT</button>
                             </div>
-                        </div>
-                </div>
-                <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md w-4/5">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="images/footballer-profile/Sergio-Ramos.png" alt="">
-                    </a>
+                    </div>
+            </div>
+            <!-- player 10 end -->
+
+            <!-- player 11 start -->
+            <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md">
+                <img class="rounded-t-lg" src="images/footballer-profile/Sergio-Ramos.png" alt="">
                     <div class="px-5 pt-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Sergio Ramos</h2>
-                            </a>
-                            <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Sergio Ramos</h2>
+                    <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
                             <div class="card-actions justify-end">
                                 <button id="button-disabled11" class="items-center mt-5 mb-5 py-2 px-12 text-sm font-medium text-center text-white bg-blue-900 rounded hover:bg-blue-400" onclick="addToselect(this)">SELECT</button>
                             </div>
-                        </div>
-                </div>
-                <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md w-4/5">
-                    <a href="#">
-                        <img class="rounded-t-lg" src="images/footballer-profile/jorginho.png" alt="">
-                    </a>
+                    </div>
+            </div>
+            <!-- player 11 end -->
+
+            <!-- player 12 start -->
+            <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md">
+                <img class="rounded-t-lg" src="images/footballer-profile/jorginho.png" alt="">
                     <div class="px-5 pt-5">
-                        <a href="#">
-                            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Jorginho</h2>
-                            </a>
-                            <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
+                     <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">Jorginho</h2>
+                    <p class="mb-3 font-light text-white">32 Goals . 120 Assist</p>
                             <div class="card-actions justify-end">
                                 <button id="button-disabled12" class="items-center mt-5 mb-5 py-2 px-12 text-sm font-medium text-center text-white bg-blue-900 rounded hover:bg-blue-400" onclick="addToselect(this)">SELECT</button>
                             </div>
-                        </div>
-                </div>
-
-                <!-- selected top five player section start -->
-
-                <div class="max-w-sm bg-black rounded border border-gray-700 shadow-md">
-                    <div class="px-5 pt-5">
-                        <h5 id="total-players" class="mb-2 text-2xl font-bold tracking-tight text-white">Selected - V</h5>
-                        <span class="absolute right-10 pr-16"><img src="images/underline-01.png" alt=""></span><br>
-                        <a href="#" class="items-center py-2 px-16 text-xl font-light text-left text-gray-400">
-                            <div class="overflow-x-auto">
-                                <table class="table table-black w-full">
-                                  <!-- head -->
-                                  <thead>
-                                    <tr>
-                                      <th></th>
-                                    </tr>
-                                  </thead>
-                                  <tbody id="players-select">
-                                  </tbody>
-                                </table>
-                            </div>
-                        </a>
                     </div>
-                </div>
-                
-                <!-- Budget Calculation section start -->
-                <div class="row-span-2 max-w-sm bg-black rounded border border-gray-700 shadow-md mb-80">
-                        <div class="px-5 pt-5 pb-5">
-                            <a href="#">
-                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">Budget</h5>
-                            </a>
-                            <span class="absolute right-10 pr-16"><img src="images/underline-01.png" alt=""></span><br><br>
-                            <div class="text-gray-300 text-end">Per Player: <input class="bg-black border border-slate-400 text-xs py-2 px-2" type="text" name="" id="player-budget"></div>
-                            <button id="playerCalculate-btn" class="items-center mt-5 py-2 px-16 text-sm font-medium text-center text-white bg-blue-900 rounded hover:bg-blue-400">Calculate</button>
-                            <p class="mt-5 text-yellow-300"><span>Player Expenses : $</span><span id="player-expenses"> </span></p>
-                            <div>
-                                <div class="py-3 text-gray-300 text-end">Manager: <input class="bg-black border border-slate-400 text-xs py-2 px-2" type="text" name="" id="manager-expense">
-                                </div>
-                                <div class="py-3 text-gray-300 text-end">Coach: <input class="bg-black border border-slate-400 text-xs py-2 px-2" type="text" name="" id="coach-expense">
-                                </div>
-                                <button id="calculate-total" class="items-center mt-5 py-2 px-12 text-sm font-medium text-center text-white bg-blue-900 rounded hover:bg-blue-400">Calculate Total</button><br>
-                                <p class="mt-5 text-yellow-300"><span>Total : $</span><span id="total-expenses"> </span></p>
-                            </div>
-                        </div>
-                    </div>
-                <!-- Budget Calculation section end -->
+            </div>
+            <!-- player 12 end -->
+
             </div>
             <!-- card section end -->
         </section>
